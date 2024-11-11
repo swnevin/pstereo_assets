@@ -1,39 +1,37 @@
 :host {
-  --border-color-dark: #097754; /* Dark green for main borders */
-  --border-color-light: #39D378; /* Light green for accents */
-  --text-color-secondary: #434242; /* White for secondary text */
-  --background-color-light: #2B3D39; /* Dark background */
-  --background-color-medium: #097754; /* Green background */
-  --header-gradient-start: #1A7C8E; /* Start gradient in header */
-  --header-gradient-middle: #097754; /* Middle gradient */
-  --header-gradient-end: #016A50; /* End gradient */
-  --button-border: #39D378; /* Light green button border */
-  --button-fill: #2B3D39; /* Dark button background */
-  --system-message: #f0f0f0; /* Background for system messages */
-  --background-color-white: #ffffff; /* Pure white */
+  --border-color-dark: #1368B2;
+  --border-color-light: #3e88c9;
+  --text-color-secondary: #434242;
+  --background-color-light: #f2f6ff;
+  --background-color-medium: #1368B2;
+  --header-gradient-start: #1368B2;
+  --header-gradient-middle: #1368B2;
+  --header-gradient-end: #0b4578;
+  --button-border: #1368B2;
+  --button-fill: #f4f7ff;
+  --system-message: #f0f0f0;
+  --background-color-white: #ffffff;
 }
 
 /* General styles */
 .vfrc-widget--chat {
   border-radius: 20px;
   border: 0.5px solid var(--border-color-light);
-  background-color: var(--background-color-light);
 }
 
 .vfrc-header {
-  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end));
+  background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
 }
 
-/* Footer styling */
 .vfrc-footer { 
-  border-radius: 0;
+  border-radius: 0px;
   border-top: 0.5px solid var(--border-color-light);
-  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-middle));
+  background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-middle));
 }
 
 /* Text and color */
 .vfrc-assistant-info--title {
-  color: var(--border-color-light);
+  color: var(--border-color-dark);
 }
 
 .vfrc-assistant-info--description {
@@ -42,7 +40,7 @@
 
 /* Button styles */
 .vfrc-button--thumbs-up {
-  background-color: var(--border-color-light);
+  background-color: var(--text-color-secondary);
 }
 
 .vfrc-button--secondary {
@@ -81,7 +79,7 @@
 }
 
 .vfrc-chat-input textarea::placeholder {
-  color: #39D378;
+  color: #3e88c9; /* Adjusted to match original color */
 }
 
 /* Proactive messages */
