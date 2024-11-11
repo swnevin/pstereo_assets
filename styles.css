@@ -3,7 +3,7 @@
   --border-color-light: #39D378; /* Light green accent for Pstereo */
   --text-color-secondary: #434242; /* Original secondary text color */
   --background-color-light: #f2f6ff; /* Original light background */
-  --background-color-medium: #1368B2; /* Original medium background */
+  --background-color-medium: #003C3D; /* Original medium background */
   --header-gradient-start: #097754; /* Start gradient in header with Pstereo green */
   --header-gradient-middle: #39D378; /* Middle gradient for footer */
   --header-gradient-end: #016A50; /* End gradient with darker green */
@@ -16,18 +16,19 @@
 /* General styles */
 .vfrc-widget--chat {
   border-radius: 20px;
-  border: 0.5px solid var(--border-color-light); /* Pstereo outline */
+  border: 0.5px solid var(--border-color-dark); /* Black outline for chat widget */
+  background-color: #02403A; /* Updated to match Pstereo's darker theme */
 }
 
 .vfrc-header {
-  background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
+  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end));
 }
 
 /* Footer styling */
 .vfrc-footer { 
   border-radius: 0;
   border-top: 0.5px solid var(--border-color-light);
-  background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-middle));
+  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-middle));
 }
 
 /* Text and color */
@@ -74,7 +75,7 @@
 
 /* Chat input field */
 .vfrc-chat-input {
-  border: 0.5px solid var(--border-color-light); /* Pstereo outline */
+  border: 0.5px solid var(--border-color-dark); /* Dark outline */
   border-radius: 15px;
   background-color: var(--button-fill); /* Original fill */
 }
