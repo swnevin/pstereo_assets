@@ -1,90 +1,91 @@
 :host {
-  --border-color-dark: #097754;
-  --border-color-light: #39D378;
-  --text-color-secondary: #434242;
-  --background-color-light: #f2f6ff;
-  --background-color-medium: #1368B2;
-  --header-gradient-start: #1A7C8E;
-  --header-gradient-middle: #097754;
-  --header-gradient-end: #016A50;
-  --button-border: #39D378;
-  --button-fill: #f4f7ff;
-  --system-message: #f0f0f0;
-  --background-color-white: #ffffff;
+  --border-color-dark: #097754; /* Green outline color for Pstereo */
+  --border-color-light: #39D378; /* Light green accent for Pstereo */
+  --text-color-secondary: #434242; /* Original secondary text color */
+  --background-color-light: #f2f6ff; /* Original light background */
+  --background-color-medium: #1368B2; /* Original medium background */
+  --header-gradient-start: #097754; /* Start gradient in header with Pstereo green */
+  --header-gradient-middle: #39D378; /* Middle gradient for footer */
+  --header-gradient-end: #016A50; /* End gradient with darker green */
+  --button-border: #39D378; /* Light green button border */
+  --button-fill: #f4f7ff; /* Original button fill color */
+  --system-message: #f0f0f0; /* Original system message background */
+  --background-color-white: #ffffff; /* Pure white */
 }
 
 /* General styles */
 .vfrc-widget--chat {
   border-radius: 20px;
-  border: 0.5px solid var(--border-color-light);
+  border: 0.5px solid var(--border-color-light); /* Pstereo outline */
 }
 
 .vfrc-header {
   background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
 }
 
+/* Footer styling */
 .vfrc-footer { 
-  border-radius: 0px;
+  border-radius: 0;
   border-top: 0.5px solid var(--border-color-light);
   background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-middle));
 }
 
 /* Text and color */
 .vfrc-assistant-info--title {
-  color: var(--border-color-dark);
+  color: var(--border-color-dark); /* Green for assistant title */
 }
 
 .vfrc-assistant-info--description {
-  color: var(--text-color-secondary);
+  color: var(--text-color-secondary); /* Original secondary color */
 }
 
 /* Button styles */
 .vfrc-button--thumbs-up {
-  background-color: var(--text-color-secondary);
+  background-color: var(--text-color-secondary); /* Original color */
 }
 
 .vfrc-button--secondary {
   border-radius: 10px;
-  border: 1.6px solid var(--button-border);
-  background-color: var(--button-fill);
+  border: 1.6px solid var(--button-border); /* Pstereo light green */
+  background-color: var(--button-fill); /* Original fill color */
 }
 
 .vfrc-button--secondary:hover {
-  background-color: var(--system-message);
+  background-color: var(--system-message); /* Original hover effect */
 }
 
 .vfrc-button--primary {
-  background-color: var(--button-border);
-  color: var(--text-color-secondary);
+  background-color: var(--button-border); /* Pstereo light green */
+  color: var(--text-color-secondary); /* Original secondary color */
   border-radius: 10px;
 }
 
 /* Text bubbles */
 .vfrc-system-response .vfrc-message {
-  background-color: var(--system-message);
-  color: var(--text-color-secondary);
+  background-color: var(--system-message); /* Original background */
+  color: var(--text-color-secondary); /* Original text color */
   border-radius: 15px 15px 0 15px;
 }
 
 .vfrc-user-response .vfrc-message {
-  background-color: var(--background-color-medium);
+  background-color: var(--background-color-medium); /* Original background */
   border-radius: 15px 15px 15px 0;
 }
 
 /* Chat input field */
 .vfrc-chat-input {
-  border: 0.5px solid var(--border-color-light);
+  border: 0.5px solid var(--border-color-light); /* Pstereo outline */
   border-radius: 15px;
-  background-color: var(--button-fill);
+  background-color: var(--button-fill); /* Original fill */
 }
 
 .vfrc-chat-input textarea::placeholder {
-  color: #3e88c9; /* Adjusted to match original color */
+  color: #3e88c9; /* Original placeholder color */
 }
 
 /* Proactive messages */
 .vfrc-proactive-message {
-  background-color: var(--background-color-white);
+  background-color: var(--background-color-white); /* Original background */
   border-radius: 20px;
   font-weight: 500;
 }
