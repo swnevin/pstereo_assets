@@ -1,7 +1,7 @@
 :host {
   --border-color-dark: #097754; /* Dark green for main borders */
   --border-color-light: #39D378; /* Light green for accents */
-  --text-color-secondary: #FFFFFF; /* White for secondary text */
+  --text-color-secondary: #434242; /* White for secondary text */
   --background-color-light: #2B3D39; /* Dark background */
   --background-color-medium: #097754; /* Green background */
   --header-gradient-start: #1A7C8E; /* Start gradient in header */
@@ -9,7 +9,7 @@
   --header-gradient-end: #016A50; /* End gradient */
   --button-border: #39D378; /* Light green button border */
   --button-fill: #2B3D39; /* Dark button background */
-  --system-message: #1E3230; /* Background for system messages */
+  --system-message: #f0f0f0; /* Background for system messages */
   --background-color-white: #ffffff; /* Pure white */
 }
 
