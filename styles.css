@@ -1,0 +1,92 @@
+:host {
+  --border-color-dark: #097754; /* Dark green for main borders */
+  --border-color-light: #39D378; /* Light green for accents */
+  --text-color-secondary: #FFFFFF; /* White for secondary text */
+  --background-color-light: #2B3D39; /* Dark background */
+  --background-color-medium: #097754; /* Green background */
+  --header-gradient-start: #1A7C8E; /* Start gradient in header */
+  --header-gradient-middle: #097754; /* Middle gradient */
+  --header-gradient-end: #016A50; /* End gradient */
+  --button-border: #39D378; /* Light green button border */
+  --button-fill: #2B3D39; /* Dark button background */
+  --system-message: #1E3230; /* Background for system messages */
+  --background-color-white: #ffffff; /* Pure white */
+}
+
+/* General styles */
+.vfrc-widget--chat {
+  border-radius: 20px;
+  border: 0.5px solid var(--border-color-light);
+  background-color: var(--background-color-light);
+}
+
+.vfrc-header {
+  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-end));
+}
+
+/* Footer styling */
+.vfrc-footer { 
+  border-radius: 0;
+  border-top: 0.5px solid var(--border-color-light);
+  background: linear-gradient(to right, var(--header-gradient-start), var(--header-gradient-middle));
+}
+
+/* Text and color */
+.vfrc-assistant-info--title {
+  color: var(--border-color-light);
+}
+
+.vfrc-assistant-info--description {
+  color: var(--text-color-secondary);
+}
+
+/* Button styles */
+.vfrc-button--thumbs-up {
+  background-color: var(--border-color-light);
+}
+
+.vfrc-button--secondary {
+  border-radius: 10px;
+  border: 1.6px solid var(--button-border);
+  background-color: var(--button-fill);
+}
+
+.vfrc-button--secondary:hover {
+  background-color: var(--system-message);
+}
+
+.vfrc-button--primary {
+  background-color: var(--button-border);
+  color: var(--text-color-secondary);
+  border-radius: 10px;
+}
+
+/* Text bubbles */
+.vfrc-system-response .vfrc-message {
+  background-color: var(--system-message);
+  color: var(--text-color-secondary);
+  border-radius: 15px 15px 0 15px;
+}
+
+.vfrc-user-response .vfrc-message {
+  background-color: var(--background-color-medium);
+  border-radius: 15px 15px 15px 0;
+}
+
+/* Chat input field */
+.vfrc-chat-input {
+  border: 0.5px solid var(--border-color-light);
+  border-radius: 15px;
+  background-color: var(--button-fill);
+}
+
+.vfrc-chat-input textarea::placeholder {
+  color: #39D378;
+}
+
+/* Proactive messages */
+.vfrc-proactive-message {
+  background-color: var(--background-color-white);
+  border-radius: 20px;
+  font-weight: 500;
+}
