@@ -1,13 +1,13 @@
 :host {
-  --border-color-dark: #1368B2;
-  --border-color-light: #3e88c9;
+  --border-color-dark: #097754;
+  --border-color-light: #39D378;
   --text-color-secondary: #434242;
   --background-color-light: #f2f6ff;
   --background-color-medium: #1368B2;
-  --header-gradient-start: #1368B2;
-  --header-gradient-middle: #1368B2;
-  --header-gradient-end: #0b4578;
-  --button-border: #1368B2;
+  --header-gradient-start: #1A7C8E;
+  --header-gradient-middle: #097754;
+  --header-gradient-end: #016A50;
+  --button-border: #39D378;
   --button-fill: #f4f7ff;
   --system-message: #f0f0f0;
   --background-color-white: #ffffff;
